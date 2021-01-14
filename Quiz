@@ -19,6 +19,31 @@ public void disconnect(Printer printer){
 6. Composition is a technique that implements an has-a relationship between classes and objects.
 
 7. When one object belongs to another. For example a collection of books in a library. A book would belong to the library.
+another example with bear and fish
+``` Java
+public interface IEat{}
+public class Salmon implements IEat{}
+public class Honey implements IEat{}
+
+public class Bear() {
+  ArrayList<IEat> belly;
+
+  public Bear() {
+    belly = new ArrayList<IEat>();
+  }
+
+  public void eat(IEat food) {
+    belly.add(food)
+  }
+}
+
+Bear bear = new Bear();
+IEat honey = new Honey();
+IEat salmon = new Salmon();
+
+bear.eat(honey);
+bear.eat(salmon);
+```
 
 8. Can control the visibility of other object to client classes and reuse only what is needed.
 
