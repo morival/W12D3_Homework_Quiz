@@ -1,20 +1,22 @@
 1. Polymorphism means multiform or "many shapes" (Greek). 
 
 2. When we apply polymorphism to OO design it allows the object to decide (by using a different parameter) on what form the method will use.
+We are treating an instance of a class as if it is also another class/type at the same time.
+```
 public void disconnect(Desktop desktop){
     devicesDesktop.remove(desktop);
 }
 public void disconnect(Printer printer){
     devicesPrinter.remove(printer);
 }
+```
+3. Abstract classes, inheritance and interfaces
 
-3. Abstract classes and interfaces
-
-4. As many as we like
+4. As many as needed
 
 5. Onomatopoeistic method applied to different animals.
 
-6. Composition is a technique that implements relationship between classes and objects.
+6. Composition is a technique that implements an has-a relationship between classes and objects.
 
 7. When one object belongs to another. For example a collection of books in a library. A book would belong to the library.
 
